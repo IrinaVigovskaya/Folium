@@ -1,0 +1,159 @@
+.body_block1{
+    width: 70%;
+    float: left;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(/img/background_reg_menu.jpg);
+}
+
+.body_block1 h1{
+    font-weight: bold;
+    color: #12343b;
+    margin-top: 5.5em;
+}
+
+.body_block1 h4{
+    color: #12343b;
+    text-align:center;
+    margin-top: 0.5em;
+}
+
+.body_block2{
+    width: 30%;
+    float: right;
+    height: 100vh;
+    background-color: #12343b;
+}
+
+.body_block2 h1{
+    font-weight: bold;
+    color: #c89666;
+    text-align:center;
+    margin-top: 4.5em;
+}
+
+.body_block2 form{
+    text-align:center;
+    color: #c89666;
+}
+
+.body_reg_button{
+    margin-top: 0.8em;
+    background-color: #c89666;
+    color: #F9F9F9;
+    border-width: 0.1em;
+    border-color: #e1b382;
+    text-align: center;
+}
+
+.to_log_button{
+    margin-top: 1em;
+    background-color: #c89666;
+    color: #F9F9F9;
+    border-width: 0.1em;
+    border-color: #e1b382;
+}
+
+button:hover{
+    background-color: #e1b382;
+    transition: 0.4s;
+    opacity: 70%;
+}
+
+.block3_img1{
+    margin-top: 8em;
+    float: right;
+}
+
+.block3_img1:hover{
+    transform: scale(1.2);
+    transition: 0.4s;
+}
+
+.block3_img2{
+    margin-top: 8em;
+}
+
+.block3_img2:hover{
+    transform: scale(1.2);
+    transition: 0.4s;
+}
+
+.aut_body{
+    background-color: #12343b;
+    text-align: center;
+}
+
+@media (max-width: 600px){
+    .body_block1{
+        width: 100vw;
+        float: left;
+        height: 90vw;
+        background-size: cover;
+        background-image: url(/img/background_reg_menu.jpg);
+    }
+
+    .body_block1 h1{
+        align-content: center;
+        font-size: calc(16px + 2vw);
+        font-weight: bold;
+        color: #12343b;
+        margin-top: 5.5em;
+    }
+
+    .body_block1 h4{
+        align-content: center;
+        font-size: calc(10px + 1vw);
+        color: #12343b;
+        text-align:center;
+        margin-top: 0.5em;
+    }
+
+    .body_block2{
+        width: 100vw;
+        float: right;
+        height: 75vw;
+        background-color: #12343b;
+    }
+
+    .body_block2 h1{
+        align-content: center;
+        font-size: calc(8px + 2vw);
+        font-weight: bold;
+        color: #c89666;
+        text-align:center;
+        margin-top: 1.5em;
+    }
+
+    .body_block2 form{
+        align-content: center;
+        font-size: calc(7px + 2vw);
+        text-align:center;
+        color: #c89666;
+    }
+
+    .to_log_button{
+        align-content: center;
+        font-size: calc(7px + 2vw);
+        margin-top: 1em;
+        background-color: #c89666;
+        color: #F9F9F9;
+        border-width: 0.1em;
+        border-color: #e1b382;
+    }
+
+    .block3_img1{
+        margin-top: 5em;
+        font-size: 23%;
+        width: 23%;
+        height: auto;
+    }
+
+    .block3_img2{
+        margin-top: 5em;
+        font-size: 23%;
+        width: 23%;
+        height: auto;
+    }
+
+}

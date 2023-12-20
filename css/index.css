@@ -1,0 +1,138 @@
+header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 3.5em;
+    background-color: #12343b;
+    opacity: 99%;
+    z-index: 100;
+}
+
+header h1{
+    margin-top: 0.1em;
+    font-weight: bold;
+    color: #c89666;
+}
+
+header h6{
+    margin-top: 1em;
+    color: #e1b382;
+    float: right;
+}
+
+header .header_menu_button{
+    margin-top: 0.8em;
+    background-color: #c89666;
+    color: #F9F9F9;
+    border-width: 0.1em;
+    border-color: #e1b382;
+    float: right;
+    border-radius: 0.3em;
+}
+
+header button:hover{
+    background-color: #e1b382;
+    transition: 0.4s;
+}
+
+.result{
+    white-space: nowrap;
+    margin-top: 1em;
+    color: #e1b382;
+    font-weight: bold;
+
+}
+
+.result_query{
+    font-weight: normal;
+}
+
+.nameNote{
+    color: #e1b382;
+    text-align: center;
+}
+
+.descriptionNote{
+    color: #e1b382;
+}
+
+.dataNote{
+    color: #e1b382;
+}
+
+.errorNote{
+    color: chocolate;
+}
+
+.note-card {
+    display: inline-block;
+    min-width: 16em;
+    min-height: 2em;
+    padding: 1em;
+    margin-top: 1em;
+    border-radius: 30px;
+    background-color: #12343b;
+    margin-bottom: 1em;
+
+}
+
+::-webkit-scrollbar-track {
+    background: #c89666;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c89666;
+}
+
+input{
+    border-radius: 0.3em;
+}
+
+.note-card li{
+    list-style-type: none;
+}
+
+.note-card h6{
+    word-break: break-all;
+}
+
+.reset_button{
+    background-color: #c89666;
+    color: #F9F9F9;
+    border-width: 0.1em;
+    border-color: #e1b382;
+    border-radius: 0.3em;
+    margin-top: 0.5em;
+}
+
+@media (max-width: 600px) {
+
+    header{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        height: calc(45px + 1vw);
+        background-color: #12343b;
+        opacity: 95%;
+        z-index: 100;
+    }
+
+    .header_menu_button {
+        font-size: calc(90%);
+    }
+
+    header h1{
+        font-size: calc(20px + 1vw); /* размер шрифта для заголовков */
+        margin-top: 0.3em;
+        font-weight: bold;
+        color: #c89666;
+    }
+
+    header h6{
+        font-size: calc(10px + 1vw);
+        color: #c89666;
+        float: none;
+    }
+
+}
+

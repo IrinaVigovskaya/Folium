@@ -1,0 +1,257 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(/img/background_work_menu.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.search{
+    float: left;
+    width: 30%;
+}
+
+.search h2{
+    margin-top: 2.2em;
+    font-weight: bold;
+    color: #12343b;
+    margin-left: 1.5em;
+}
+
+.search h5{
+    font-weight: bold;
+    color: #e1b382;
+}
+
+.search button{
+    background-color: #c89666;
+    color: #F9F9F9;
+    border-width: 0.1em;
+    border-color: #e1b382;
+    text-align: center;
+    border-radius: 0.3em;
+}
+
+.search_window{
+    display: inline-block;
+    margin-top: 1em;
+    min-width: 20em;
+    min-height: 5em;
+    padding: 2em;
+    border-radius: 30px;
+    background-color: #12343b;
+}
+
+.searchH4{
+    margin-top: 1em;
+}
+
+.print{
+    max-height: 30em; /* Определяем максимальную высоту контейнера, где будет прокрутка */
+    width: 20em;
+    overflow-y: auto; /* Включаем вертикальную прокрутку */
+    float: right;
+    margin-right: 2em;
+}
+
+.print_h2{
+    font-weight: bold;
+    color: #12343b;
+    float: right;
+    margin-top: 2.2em;
+    margin-right: 3em;
+}
+
+.print h5{
+    font-weight: bold;
+}
+
+.Add{
+    float: right;
+    margin-right: 3em;
+    display: inline-block;
+    min-width: 13em;
+    min-height: 2em;
+    padding: 2em;
+    border-radius: 30px;
+    background-color: #12343b;
+    margin-top: 1em;
+
+}
+
+.AddH2{
+    float: right;
+    margin-top: 2.2em;
+    margin-right: 1.5em;
+    font-weight: bold;
+    color: #12343b;
+}
+
+.Add form{
+    color: #e1b382;
+    font-weight: bold;
+}
+
+.Add h5{
+    color: #e1b382;
+}
+
+.Add button{
+    background-color: #c89666;
+    color: #F9F9F9;
+    border-width: 0.1em;
+    border-color: #e1b382;
+    text-align: center;
+    border-radius: 0.3em;
+}
+
+.button_del {
+    background-color: #c89666;
+    color: #F9F9F9;
+    border-width: 0.1em;
+    border-color: #e1b382;
+    text-align: center;
+    margin-bottom: 1em;
+    border-radius: 0.3em;
+}
+
+.button_done{
+    background-color: #c89666;
+    color: #F9F9F9;
+    border-width: 0.1em;
+    border-color: #e1b382;
+    text-align: center;
+    float: left;
+    border-radius: 0.3em;
+}
+
+
+
+@media (min-width: 601px) {
+    .open_modal_button{
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .print{
+        max-height: 28em; /* Определяем максимальную высоту контейнера, где будет прокрутка */
+        margin-right: 1em;
+    }
+
+    .print_h2{
+        margin-top: 1em;
+    }
+
+    .Add{
+        display: none;
+    }
+
+    .button_done{
+        margin-top: 0.2em;
+        float: left;
+    }
+
+    .button_del{
+        margin-top: 0.2em;
+    }
+
+    .search{
+        width: 100%;
+    }
+
+    .open_modal_button{
+        border-radius: 5px;
+        font-size: 30px;
+        width: 1.5em;
+        border-color: #e1b382;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #c89666;
+        color: #F9F9F9;
+        margin-top: -1.5em;
+        margin-right: 0.5em;
+        float: right;
+    }
+
+    .close_modal_button{
+        font-size: 30px;
+        border-color: #e1b382;
+        background-color: #c89666;
+        color: #F9F9F9;
+    }
+
+    .open_modal_button:hover{
+        background-color: #e1b382;
+        transition: 0.4s;
+    }
+
+
+    .search button{
+        float: right;
+        margin-right: 7.7em;
+    }
+
+    .block_work{
+        height: 100vh;
+    }
+
+}
+
+/* Скрыть модальное окно по умолчанию */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Контент модального окна */
+.modal-content {
+    background-color: #e1b382;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.modal-content h2{
+    font-weight: bold;
+    color: #12343b;
+}
+
+.modal-content h5{
+    color: #12343b;
+}
+
+.modal-content button{
+    background-color: #c89666;
+    color: #F9F9F9;
+    border-width: 0.1em;
+    border-color: #e1b382;
+    text-align: center;
+}
+
+/* Кнопка закрытия модального окна */
+.close {
+    color: #12343b;
+    margin-left: 10em;
+    margin-top: -0.5em;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
